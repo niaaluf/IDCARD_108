@@ -9,16 +9,21 @@ and open the template in the editor.
         <title>Project 4</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+            background-color: #D6E4E5;
+            }
+        </style>
     </head>
     <body>
-        <div>Data Diri Mahasiswa</div>
+        <h1>Data Diri Mahasiswa</h1>
         <hr />
         <form action="/getData" method="POST" enctype="multipart/form-data">
-            Name <input type="text" name="nama"><br><!-- comment -->
+            Name :<input type="text" name="nama"><br><!-- comment -->
             <br>
-            Date of Birth <input type="date" name="tanggal"><br>
+            Date of Birth :<input type="date" name="tanggal"><br>
             <br>
-            Photo <input type="file" name="image"><br>
+            Photo :<input type="file" name="image"><br>
             <br>
             <input type="submit" name="send">
         </form>
