@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Data Diri Mahasiswa</title>
+        <title>Data Diri</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
@@ -31,27 +31,23 @@ and open the template in the editor.
         </style>
     </head>
     <body>
-        <h1>Kartu Tanda Mahasiswa</h1>
+        <h1>Data Diri</h1>
         <hr>
         <table border="1">
             <thead>
                 <tr>
                     <td>Nama Mahasiswa</td>
                     <td>Tanggal Lahir</td>
+                    <td>Photo</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                      <td th:text="${name}"></td>
-                     <td th:text="${tgl}"></td><!-- comment -->
+                     <td th:text="${tgl}"></td>
+                     <td> <img th:src="${gambar}"> </td>
                 </tr>
             </tbody>
         </table>
-        <table>
-            <td>Photo</td>
-        </table>
-        <tr>
-             <img th:src="${gambar}">
-        </tr>
     </body>
 </html>
